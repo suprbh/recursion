@@ -15,7 +15,8 @@ var getElementsArray = function(nodes, className) {
 		// for the node elements that contain the className and store them
 		// into the same array.
 		var classElemsArray = [];
-		for (var i=0; i < nodes.length; i++) {
+		var len = nodes.length;
+		for (var i=0; i < len; i++) {
 			var node = nodes[i];
 			if (node.nodeName !== "#text" && node.classList.contains(className)) {
 				classElemsArray.push(node);
